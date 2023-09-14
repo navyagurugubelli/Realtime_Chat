@@ -17,4 +17,11 @@ pipeline {
             }
         }
     }
+    post {
+        failure {
+             sh '''#!/bin/bash
+                 echo "hello world" 
+                '''
+        }
+    }
 }
